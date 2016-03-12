@@ -1,0 +1,284 @@
+have_header: checking for ruby/thread.h... -------------------- no
+
+"/usr/bin/gcc -E -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common    conftest.c -o conftest.i"
+conftest.c:1:10: fatal error: 'ruby/thread.h' file not found
+#include <ruby/thread.h>
+         ^
+1 error generated.
+checked program was:
+/* begin */
+1: #include <ruby/thread.h>
+/* end */
+
+--------------------
+
+have_func: checking for rb_thread_blocking_region()... -------------------- no
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'      -lruby-static  -L/opt/local/lib -ldl -lobjc  "
+conftest.c:3:53: error: use of undeclared identifier 'rb_thread_blocking_region'
+int t() { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return 0; }
+                                                    ^
+1 error generated.
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return 0; }
+/* end */
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'      -lruby-static  -L/opt/local/lib -ldl -lobjc  "
+conftest.c:3:11: warning: implicit declaration of function 'rb_thread_blocking_region' is invalid in C99 [-Wimplicit-function-declaration]
+int t() { rb_thread_blocking_region(); return 0; }
+          ^
+1 warning generated.
+Undefined symbols for architecture x86_64:
+  "_rb_thread_blocking_region", referenced from:
+      _t in conftest-bae5f2.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { rb_thread_blocking_region(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_wait_for_single_fd()... -------------------- no
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'      -lruby-static  -L/opt/local/lib -ldl -lobjc  "
+conftest.c:3:53: error: use of undeclared identifier 'rb_wait_for_single_fd'
+int t() { void ((*volatile p)()); p = (void ((*)()))rb_wait_for_single_fd; return 0; }
+                                                    ^
+1 error generated.
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))rb_wait_for_single_fd; return 0; }
+/* end */
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'      -lruby-static  -L/opt/local/lib -ldl -lobjc  "
+conftest.c:3:11: warning: implicit declaration of function 'rb_wait_for_single_fd' is invalid in C99 [-Wimplicit-function-declaration]
+int t() { rb_wait_for_single_fd(); return 0; }
+          ^
+1 warning generated.
+Undefined symbols for architecture x86_64:
+  "_rb_wait_for_single_fd", referenced from:
+      _t in conftest-df8497.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { rb_wait_for_single_fd(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_hash_dup()... -------------------- no
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'      -lruby-static  -L/opt/local/lib -ldl -lobjc  "
+conftest.c:3:53: error: use of undeclared identifier 'rb_hash_dup'
+int t() { void ((*volatile p)()); p = (void ((*)()))rb_hash_dup; return 0; }
+                                                    ^
+1 error generated.
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))rb_hash_dup; return 0; }
+/* end */
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'      -lruby-static  -L/opt/local/lib -ldl -lobjc  "
+conftest.c:3:11: warning: implicit declaration of function 'rb_hash_dup' is invalid in C99 [-Wimplicit-function-declaration]
+int t() { rb_hash_dup(); return 0; }
+          ^
+1 warning generated.
+Undefined symbols for architecture x86_64:
+  "_rb_hash_dup", referenced from:
+      _t in conftest-754dd5.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { rb_hash_dup(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_intern3()... -------------------- no
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'      -lruby-static  -L/opt/local/lib -ldl -lobjc  "
+conftest.c:3:53: error: use of undeclared identifier 'rb_intern3'
+int t() { void ((*volatile p)()); p = (void ((*)()))rb_intern3; return 0; }
+                                                    ^
+1 error generated.
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))rb_intern3; return 0; }
+/* end */
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'      -lruby-static  -L/opt/local/lib -ldl -lobjc  "
+conftest.c:3:11: warning: implicit declaration of function 'rb_intern3' is invalid in C99 [-Wimplicit-function-declaration]
+int t() { rb_intern3(); return 0; }
+          ^
+1 warning generated.
+Undefined symbols for architecture x86_64:
+  "_rb_intern3", referenced from:
+      _t in conftest-2da0a8.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { rb_intern3(); return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for mysql.h... -------------------- yes
+
+"/usr/bin/gcc -E -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I/usr/local/Cellar/mysql/5.5.10/include -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common    conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include <mysql.h>
+/* end */
+
+--------------------
+
+have_header: checking for errmsg.h... -------------------- yes
+
+"/usr/bin/gcc -E -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I/usr/local/Cellar/mysql/5.5.10/include -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common    conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include <errmsg.h>
+/* end */
+
+--------------------
+
+have_header: checking for mysqld_error.h... -------------------- yes
+
+"/usr/bin/gcc -E -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I/usr/local/Cellar/mysql/5.5.10/include -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common    conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include <mysqld_error.h>
+/* end */
+
+--------------------
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I/usr/local/Cellar/mysql/5.5.10/include -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'     -L/usr/local/Cellar/mysql/5.5.10/lib -lmysqlclient   -lpthread -lz -lssl -lcrypto  -lruby-static -Werror -Weverything -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: int main() {return 0;}
+/* end */
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I/usr/local/Cellar/mysql/5.5.10/include -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'     -L/usr/local/Cellar/mysql/5.5.10/lib -lmysqlclient   -lpthread -lz -lssl -lcrypto  -lruby-static -Werror -Wno-bad-function-cast -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: int main() {return 0;}
+/* end */
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I/usr/local/Cellar/mysql/5.5.10/include -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'     -L/usr/local/Cellar/mysql/5.5.10/lib -lmysqlclient   -lpthread -lz -lssl -lcrypto  -lruby-static -Werror -Wno-conditional-uninitialized -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: int main() {return 0;}
+/* end */
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I/usr/local/Cellar/mysql/5.5.10/include -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'     -L/usr/local/Cellar/mysql/5.5.10/lib -lmysqlclient   -lpthread -lz -lssl -lcrypto  -lruby-static -Werror -Wno-covered-switch-default -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: int main() {return 0;}
+/* end */
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I/usr/local/Cellar/mysql/5.5.10/include -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'     -L/usr/local/Cellar/mysql/5.5.10/lib -lmysqlclient   -lpthread -lz -lssl -lcrypto  -lruby-static -Werror -Wno-declaration-after-statement -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: int main() {return 0;}
+/* end */
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I/usr/local/Cellar/mysql/5.5.10/include -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'     -L/usr/local/Cellar/mysql/5.5.10/lib -lmysqlclient   -lpthread -lz -lssl -lcrypto  -lruby-static -Werror -Wno-disabled-macro-expansion -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: int main() {return 0;}
+/* end */
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I/usr/local/Cellar/mysql/5.5.10/include -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'     -L/usr/local/Cellar/mysql/5.5.10/lib -lmysqlclient   -lpthread -lz -lssl -lcrypto  -lruby-static -Werror -Wno-documentation-unknown-command -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: int main() {return 0;}
+/* end */
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I/usr/local/Cellar/mysql/5.5.10/include -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'     -L/usr/local/Cellar/mysql/5.5.10/lib -lmysqlclient   -lpthread -lz -lssl -lcrypto  -lruby-static -Werror -Wno-missing-field-initializers -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: int main() {return 0;}
+/* end */
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I/usr/local/Cellar/mysql/5.5.10/include -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'     -L/usr/local/Cellar/mysql/5.5.10/lib -lmysqlclient   -lpthread -lz -lssl -lcrypto  -lruby-static -Werror -Wno-missing-variable-declarations -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: int main() {return 0;}
+/* end */
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I/usr/local/Cellar/mysql/5.5.10/include -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'     -L/usr/local/Cellar/mysql/5.5.10/lib -lmysqlclient   -lpthread -lz -lssl -lcrypto  -lruby-static -Werror -Wno-padded -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: int main() {return 0;}
+/* end */
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I/usr/local/Cellar/mysql/5.5.10/include -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'     -L/usr/local/Cellar/mysql/5.5.10/lib -lmysqlclient   -lpthread -lz -lssl -lcrypto  -lruby-static -Werror -Wno-reserved-id-macro -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: int main() {return 0;}
+/* end */
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I/usr/local/Cellar/mysql/5.5.10/include -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'     -L/usr/local/Cellar/mysql/5.5.10/lib -lmysqlclient   -lpthread -lz -lssl -lcrypto  -lruby-static -Werror -Wno-sign-conversion -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: int main() {return 0;}
+/* end */
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I/usr/local/Cellar/mysql/5.5.10/include -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'     -L/usr/local/Cellar/mysql/5.5.10/lib -lmysqlclient   -lpthread -lz -lssl -lcrypto  -lruby-static -Werror -Wno-static-in-inline -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: int main() {return 0;}
+/* end */
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I/usr/local/Cellar/mysql/5.5.10/include -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'     -L/usr/local/Cellar/mysql/5.5.10/lib -lmysqlclient   -lpthread -lz -lssl -lcrypto  -lruby-static -Werror -Wno-switch-enum -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: int main() {return 0;}
+/* end */
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I/usr/local/Cellar/mysql/5.5.10/include -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'     -L/usr/local/Cellar/mysql/5.5.10/lib -lmysqlclient   -lpthread -lz -lssl -lcrypto  -lruby-static -Werror -Wno-undef -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: int main() {return 0;}
+/* end */
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I/usr/local/Cellar/mysql/5.5.10/include -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'     -L/usr/local/Cellar/mysql/5.5.10/lib -lmysqlclient   -lpthread -lz -lssl -lcrypto  -lruby-static -Werror -Wno-unreachable-code -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: int main() {return 0;}
+/* end */
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I/usr/local/Cellar/mysql/5.5.10/include -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'     -L/usr/local/Cellar/mysql/5.5.10/lib -lmysqlclient   -lpthread -lz -lssl -lcrypto  -lruby-static -Werror -Wno-used-but-marked-unused -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: int main() {return 0;}
+/* end */
+
+"/usr/bin/gcc -o conftest -I/opt/local/include -I. -I/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib/ruby/1.8/i686-darwin10.8.0 -I. -I/usr/local/Cellar/mysql/5.5.10/include -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/include'  -g -O2  -pipe -fno-common   -Weverything -Wno-bad-function-cast -Wno-conditional-uninitialized -Wno-covered-switch-default -Wno-declaration-after-statement -Wno-disabled-macro-expansion -Wno-documentation-unknown-command -Wno-missing-field-initializers -Wno-missing-variable-declarations -Wno-padded -Wno-reserved-id-macro -Wno-sign-conversion -Wno-static-in-inline -Wno-switch-enum -Wno-undef -Wno-unreachable-code -Wno-used-but-marked-unused conftest.c  -L. -L/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib -L. -L'/Users/alvin/.rbenv/versions/ree-1.8.7-2012.02/lib'     -L/usr/local/Cellar/mysql/5.5.10/lib -lmysqlclient   -lpthread -lz -lssl -lcrypto  -lruby-static  -Wl,-rpath,/usr/local/Cellar/mysql/5.5.10/lib -L/opt/local/lib -ldl -lobjc  "
+checked program was:
+/* begin */
+1: int main() {return 0;}
+/* end */
+

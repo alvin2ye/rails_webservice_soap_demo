@@ -6,9 +6,6 @@ GEM
     actionpack (2.3.4)
       activesupport (= 2.3.4)
       rack (~> 1.0.0)
-    actionwebservice (2.3.4)
-      actionpack (= 2.3.4)
-      activerecord (= 2.3.4)
     activerecord (2.3.4)
       activesupport (= 2.3.4)
     activerecord-mysql2-adapter (0.0.3)
@@ -26,12 +23,16 @@ GEM
       activesupport (= 2.3.4)
       rake (>= 0.8.3)
     rake (0.8.7)
+    rubyjedi-actionwebservice (2.3.5.20100714122544)
+      actionpack (~> 2.3.0)
+      activerecord (~> 2.3.0)
+      activesupport (~> 2.3.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  actionwebservice (~> 2.3.4)
   activerecord-mysql2-adapter
   rails (~> 2.3.4)
   rake (= 0.8.7)
+  rubyjedi-actionwebservice (~> 2.3.5)
