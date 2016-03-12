@@ -1,0 +1,37 @@
+GEM
+  remote: https://ruby.taobao.org/
+  specs:
+    actionmailer (2.3.4)
+      actionpack (= 2.3.4)
+    actionpack (2.3.4)
+      activesupport (= 2.3.4)
+      rack (~> 1.0.0)
+    actionwebservice (2.3.4)
+      actionpack (= 2.3.4)
+      activerecord (= 2.3.4)
+    activerecord (2.3.4)
+      activesupport (= 2.3.4)
+    activerecord-mysql2-adapter (0.0.3)
+      mysql2
+    activeresource (2.3.4)
+      activesupport (= 2.3.4)
+    activesupport (2.3.4)
+    mysql2 (0.4.3)
+    rack (1.0.1)
+    rails (2.3.4)
+      actionmailer (= 2.3.4)
+      actionpack (= 2.3.4)
+      activerecord (= 2.3.4)
+      activeresource (= 2.3.4)
+      activesupport (= 2.3.4)
+      rake (>= 0.8.3)
+    rake (0.8.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  actionwebservice (~> 2.3.4)
+  activerecord-mysql2-adapter
+  rails (~> 2.3.4)
+  rake (= 0.8.7)

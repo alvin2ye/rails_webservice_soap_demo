@@ -1,0 +1,936 @@
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2016-03-12 16:46:38) [GET]
+  [4;36;1mSQL (4.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 18ms (View: 2, DB: 5) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSCHEMA (0.3ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (49.1ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (23.3ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSCHEMA (0.2ms)[0m   [0mSHOW TABLES [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateNews (20160312084712)
+  [4;35;1mSQL (8.8ms)[0m   [0mCREATE TABLE `news` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `subject` varchar(255), `body` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20160312084712')[0m
+  [4;35;1mSCHEMA (0.3ms)[0m   [0mSHOW TABLES [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSCHEMA (0.1ms)[0m   [0mSHOW TABLES [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `news`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `news`[0m
+
+
+Processing NewsController#index (for 127.0.0.1 at 2016-03-12 16:52:37) [GET]
+  [4;36;1mNews Load (0.3ms)[0m   [0;1mSELECT * FROM `news` [0m
+Rendering template within layouts/news
+Rendering news/index
+Completed in 25ms (View: 21, DB: 0) | 200 OK [http://localhost/news]
+
+
+Processing NewsController#new (for 127.0.0.1 at 2016-03-12 16:52:38) [GET]
+Rendering template within layouts/news
+Rendering news/new
+
+ActionView::TemplateError (news_url failed to generate from {:action=>"show", :controller=>"news"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["news", :id] - are they all satisfied?) on line #3 of app/views/news/new.html.erb:
+1: <h1>New news</h1>
+2: 
+3: <% form_for(@news) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    (eval):16:in `news_path'
+    app/views/news/new.html.erb:3
+    app/controllers/news_controller.rb:29:in `new'
+
+Rendered rescues/_trace (32.5ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing NewsController#new (for 127.0.0.1 at 2016-03-12 16:52:56) [GET]
+Rendering template within layouts/news
+Rendering news/new
+
+ActionView::TemplateError (news_url failed to generate from {:action=>"show", :controller=>"news"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["news", :id] - are they all satisfied?) on line #3 of app/views/news/new.html.erb:
+1: <h1>New news</h1>
+2: 
+3: <% form_for(@news) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    (eval):16:in `news_path'
+    app/views/news/new.html.erb:3
+    app/controllers/news_controller.rb:29:in `new'
+
+Rendered rescues/_trace (33.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing NewsController#new (for 127.0.0.1 at 2016-03-12 16:52:56) [GET]
+Rendering template within layouts/news
+Rendering news/new
+
+ActionView::TemplateError (news_url failed to generate from {:action=>"show", :controller=>"news"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["news", :id] - are they all satisfied?) on line #3 of app/views/news/new.html.erb:
+1: <h1>New news</h1>
+2: 
+3: <% form_for(@news) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    (eval):16:in `news_path'
+    app/views/news/new.html.erb:3
+    app/controllers/news_controller.rb:29:in `new'
+
+Rendered rescues/_trace (32.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing NewsController#new (for 127.0.0.1 at 2016-03-12 16:53:10) [GET]
+Rendering template within layouts/news
+Rendering news/new
+
+ActionView::TemplateError (news_url failed to generate from {:action=>"show", :controller=>"news"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["news", :id] - are they all satisfied?) on line #3 of app/views/news/new.html.erb:
+1: <h1>New news</h1>
+2: 
+3: <% form_for(@news) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    (eval):16:in `news_path'
+    app/views/news/new.html.erb:3
+    app/controllers/news_controller.rb:29:in `new'
+
+Rendered rescues/_trace (117.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSCHEMA (0.7ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateNews (20160312084712)
+Migrating to CreateArticles (20160312085410)
+  [4;36;1mSQL (8.5ms)[0m   [0;1mCREATE TABLE `articles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `subject` varchar(255), `body` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20160312085410')[0m
+  [4;36;1mSCHEMA (0.3ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSCHEMA (0.2ms)[0m   [0;1mSHOW TABLES [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `articles`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `articles`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `news`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `news`[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-03-12 16:54:47) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 22ms (View: 18, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2016-03-12 16:54:49) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2016-03-12 16:54:51) [POST]
+  Parameters: {"authenticity_token"=>"KFROP/yNrmIInUmjHYMKrMTJyNkv0g8f2YowttbVNbM=", "commit"=>"Create", "article"=>{"body"=>"asdfasdf", "subject"=>"asdf"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mArticle Create (0.2ms)[0m   [0;1mINSERT INTO `articles` (`body`, `created_at`, `subject`, `updated_at`) VALUES('asdfasdf', '2016-03-12 08:54:51', 'asdf', '2016-03-12 08:54:51')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/articles/1
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2016-03-12 16:54:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-03-12 16:54:53) [GET]
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2016-03-12 16:54:54) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2016-03-12 16:54:55) [POST]
+  Parameters: {"authenticity_token"=>"KFROP/yNrmIInUmjHYMKrMTJyNkv0g8f2YowttbVNbM=", "commit"=>"Create", "article"=>{"body"=>"dfsdf", "subject"=>"33"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mArticle Create (0.2ms)[0m   [0mINSERT INTO `articles` (`body`, `created_at`, `subject`, `updated_at`) VALUES('dfsdf', '2016-03-12 08:54:55', '33', '2016-03-12 08:54:55')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/articles/2
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2016-03-12 16:54:55) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 2) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-03-12 16:54:57) [GET]
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2016-03-12 16:54:58) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2016-03-12 16:55:00) [POST]
+  Parameters: {"authenticity_token"=>"KFROP/yNrmIInUmjHYMKrMTJyNkv0g8f2YowttbVNbM=", "commit"=>"Create", "article"=>{"body"=>"asdfasdfasdf", "subject"=>"asdf"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mArticle Create (0.2ms)[0m   [0;1mINSERT INTO `articles` (`body`, `created_at`, `subject`, `updated_at`) VALUES('asdfasdfasdf', '2016-03-12 08:55:00', 'asdf', '2016-03-12 08:55:00')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/articles/3
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2016-03-12 16:55:00) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`id` = 3) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/articles/3]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-03-12 16:55:01) [GET]
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2016-03-12 16:55:02) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2016-03-12 16:55:08) [POST]
+  Parameters: {"authenticity_token"=>"KFROP/yNrmIInUmjHYMKrMTJyNkv0g8f2YowttbVNbM=", "commit"=>"Create", "article"=>{"body"=>"ddddaf", "subject"=>"asdf"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mArticle Create (0.2ms)[0m   [0mINSERT INTO `articles` (`body`, `created_at`, `subject`, `updated_at`) VALUES('ddddaf', '2016-03-12 08:55:08', 'asdf', '2016-03-12 08:55:08')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/articles/4
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2016-03-12 16:55:08) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 4) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/articles/4]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-03-12 16:55:09) [GET]
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#destroy (for 127.0.0.1 at 2016-03-12 16:55:12) [DELETE]
+  Parameters: {"authenticity_token"=>"KFROP/yNrmIInUmjHYMKrMTJyNkv0g8f2YowttbVNbM=", "id"=>"1"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mArticle Destroy (0.2ms)[0m   [0mDELETE FROM `articles` WHERE `id` = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/articles
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/articles/1]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-03-12 16:55:12) [GET]
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index to xml (for 127.0.0.1 at 2016-03-12 16:55:16) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Completed in 49ms (View: 44, DB: 1) | 200 OK [http://localhost/articles.xml]
+
+
+Processing ArticlesController#index to json (for 127.0.0.1 at 2016-03-12 16:55:22) [GET]
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM `articles` [0m
+Completed in 4ms (View: 0, DB: 0) | 406 Not Acceptable [http://localhost/articles.json]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-03-12 17:03:20) [GET]
+
+ActionController::RoutingError (No route matches "/article_api" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-03-12 17:07:19) [GET]
+
+ActionController::RoutingError (No route matches "/article_api/wsdl" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#wsdl (for 127.0.0.1 at 2016-03-12 17:07:28) [GET]
+
+SyntaxError (/private/tmp/t523/t2/app/controllers/article_api_controller.rb:11: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (20.9ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#wsdl (for 127.0.0.1 at 2016-03-12 17:07:29) [GET]
+
+SyntaxError (/private/tmp/t523/t2/app/controllers/article_api_controller.rb:11: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (21.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#wsdl (for 127.0.0.1 at 2016-03-12 17:07:29) [GET]
+
+SyntaxError (/private/tmp/t523/t2/app/controllers/article_api_controller.rb:11: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (20.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#wsdl (for 127.0.0.1 at 2016-03-12 17:07:30) [GET]
+
+SyntaxError (/private/tmp/t523/t2/app/controllers/article_api_controller.rb:11: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (17.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#wsdl (for 127.0.0.1 at 2016-03-12 17:07:30) [GET]
+
+SyntaxError (/private/tmp/t523/t2/app/controllers/article_api_controller.rb:11: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (24.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#wsdl (for 127.0.0.1 at 2016-03-12 17:07:30) [GET]
+
+SyntaxError (/private/tmp/t523/t2/app/controllers/article_api_controller.rb:11: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (18.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#wsdl (for 127.0.0.1 at 2016-03-12 17:07:57) [GET]
+
+SyntaxError (/private/tmp/t523/t2/app/controllers/article_api_controller.rb:13: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (17.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#wsdl (for 127.0.0.1 at 2016-03-12 17:07:58) [GET]
+
+SyntaxError (/private/tmp/t523/t2/app/controllers/article_api_controller.rb:13: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (19.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#wsdl (for 127.0.0.1 at 2016-03-12 17:07:59) [GET]
+
+SyntaxError (/private/tmp/t523/t2/app/controllers/article_api_controller.rb:13: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (112.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#wsdl (for 127.0.0.1 at 2016-03-12 17:07:59) [GET]
+
+SyntaxError (/private/tmp/t523/t2/app/controllers/article_api_controller.rb:13: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (22.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticleApiController#wsdl (for 127.0.0.1 at 2016-03-12 17:08:17) [GET]
+Sending data 
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://localhost/article_api/wsdl]
+
+
+Processing ArticleApiController#index (for 127.0.0.1 at 2016-03-12 17:08:21) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: api, hello_message, invoke, invoke_method_params, invoke_submit, and wsdl):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticleApiController#index (for 127.0.0.1 at 2016-03-12 17:08:23) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: api, hello_message, invoke, invoke_method_params, invoke_submit, and wsdl):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticleApiController#wsdl (for 127.0.0.1 at 2016-03-12 17:08:26) [GET]
+Sending data 
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/article_api/wsdl]
+
+
+Processing ArticleApiController#wsdl (for 127.0.0.1 at 2016-03-12 17:08:46) [GET]
+Sending data 
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://localhost/article_api/wsdl]
+
+
+Processing ArticleApiController#api (for 127.0.0.1 at 2016-03-12 17:08:58) [POST]
+  Parameters: {"Envelope"=>{"xmlns:urn"=>"urn:ActionWebService", "xmlns:soapenv"=>"http://schemas.xmlsoap.org/soap/envelope/", "Body"=>{"HelloMessage"=>{"soapenv:encodingStyle"=>"http://schemas.xmlsoap.org/soap/encoding/", "lastname"=>"asdf", "firstname"=>"22"}}, "Header"=>nil, "xmlns:xsd"=>"http://www.w3.org/2001/XMLSchema", "xmlns:xsi"=>"http://www.w3.org/2001/XMLSchema-instance"}}
+
+Web Service Request: HelloMessage(firstname=>"22", lastname=>"asdf") Entrypoint: api
+  <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActionWebService">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <urn:HelloMessage soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+           <firstname xsi:type="xsd:string">22</firstname>
+           <lastname xsi:type="xsd:string">asdf</lastname>
+        </urn:HelloMessage>
+     </soapenv:Body>
+  </soapenv:Envelope>
+
+Web Service Response (0.003862): => "Hello 22 asdf"
+  <?xml version="1.0" encoding="UTF-8" ?>
+  <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <env:Body>
+      <n1:HelloMessageResponse xmlns:n1="urn:ActionWebService"
+          env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+        <return xsi:type="xsd:string">Hello 22 asdf</return>
+      </n1:HelloMessageResponse>
+    </env:Body>
+  </env:Envelope>
+Sending data 
+Completed in 28ms (View: 2, DB: 0) | 200 OK [http://localhost/article_api/api]
+
+
+Processing ArticleApiController#api (for 127.0.0.1 at 2016-03-12 17:09:16) [POST]
+  Parameters: {"Envelope"=>{"xmlns:urn"=>"urn:ActionWebService", "xmlns:soapenv"=>"http://schemas.xmlsoap.org/soap/envelope/", "Body"=>{"HelloMessage"=>{"soapenv:encodingStyle"=>"http://schemas.xmlsoap.org/soap/encoding/", "lastname"=>"asdf", "firstname"=>"222"}}, "Header"=>nil, "xmlns:xsd"=>"http://www.w3.org/2001/XMLSchema", "xmlns:xsi"=>"http://www.w3.org/2001/XMLSchema-instance"}}
+
+Web Service Request: HelloMessage(firstname=>"222", lastname=>"asdf") Entrypoint: api
+  <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActionWebService">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <urn:HelloMessage soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+           <firstname xsi:type="xsd:string">222</firstname>
+           <lastname xsi:type="xsd:string">asdf</lastname>
+        </urn:HelloMessage>
+     </soapenv:Body>
+  </soapenv:Envelope>
+
+Web Service Response (0.003413): => "Hello 222 asdf"
+  <?xml version="1.0" encoding="UTF-8" ?>
+  <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <env:Body>
+      <n1:HelloMessageResponse xmlns:n1="urn:ActionWebService"
+          env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+        <return xsi:type="xsd:string">Hello 222 asdf</return>
+      </n1:HelloMessageResponse>
+    </env:Body>
+  </env:Envelope>
+Sending data 
+Completed in 18ms (View: 2, DB: 0) | 200 OK [http://localhost/article_api/api]
+
+
+Processing ArticleApiController#api (for 127.0.0.1 at 2016-03-12 17:10:04) [POST]
+  Parameters: {"Envelope"=>{"xmlns:urn"=>"urn:ActionWebService", "xmlns:soapenv"=>"http://schemas.xmlsoap.org/soap/envelope/", "Body"=>{"HelloMessage"=>{"soapenv:encodingStyle"=>"http://schemas.xmlsoap.org/soap/encoding/", "lastname"=>"asdf", "firstname"=>"222"}}, "Header"=>nil, "xmlns:xsd"=>"http://www.w3.org/2001/XMLSchema", "xmlns:xsi"=>"http://www.w3.org/2001/XMLSchema-instance"}}
+
+Web Service Request: HelloMessage(firstname=>"222", lastname=>"asdf") Entrypoint: api
+  <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActionWebService">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <urn:HelloMessage soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+           <firstname xsi:type="xsd:string">222</firstname>
+           <lastname xsi:type="xsd:string">asdf</lastname>
+        </urn:HelloMessage>
+     </soapenv:Body>
+  </soapenv:Envelope>
+
+Web Service Response (0.002062): => "Hello 222 asdf"
+  <?xml version="1.0" encoding="UTF-8" ?>
+  <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <env:Body>
+      <n1:HelloMessageResponse xmlns:n1="urn:ActionWebService"
+          env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+        <return xsi:type="xsd:string">Hello 222 asdf</return>
+      </n1:HelloMessageResponse>
+    </env:Body>
+  </env:Envelope>
+Sending data 
+Completed in 20ms (View: 2, DB: 0) | 200 OK [http://localhost/article_api/api]
+
+
+Processing ArticleApiController#api (for 127.0.0.1 at 2016-03-12 17:10:05) [POST]
+  Parameters: {"Envelope"=>{"xmlns:urn"=>"urn:ActionWebService", "xmlns:soapenv"=>"http://schemas.xmlsoap.org/soap/envelope/", "Body"=>{"HelloMessage"=>{"soapenv:encodingStyle"=>"http://schemas.xmlsoap.org/soap/encoding/", "lastname"=>"asdf", "firstname"=>"222"}}, "Header"=>nil, "xmlns:xsd"=>"http://www.w3.org/2001/XMLSchema", "xmlns:xsi"=>"http://www.w3.org/2001/XMLSchema-instance"}}
+
+Web Service Request: HelloMessage(firstname=>"222", lastname=>"asdf") Entrypoint: api
+  <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActionWebService">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <urn:HelloMessage soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+           <firstname xsi:type="xsd:string">222</firstname>
+           <lastname xsi:type="xsd:string">asdf</lastname>
+        </urn:HelloMessage>
+     </soapenv:Body>
+  </soapenv:Envelope>
+
+Web Service Response (0.003843): => "Hello 222 asdf"
+  <?xml version="1.0" encoding="UTF-8" ?>
+  <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <env:Body>
+      <n1:HelloMessageResponse xmlns:n1="urn:ActionWebService"
+          env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+        <return xsi:type="xsd:string">Hello 222 asdf</return>
+      </n1:HelloMessageResponse>
+    </env:Body>
+  </env:Envelope>
+Sending data 
+Completed in 30ms (View: 3, DB: 0) | 200 OK [http://localhost/article_api/api]
+
+
+Processing ArticleApiController#api (for 127.0.0.1 at 2016-03-12 17:10:06) [POST]
+  Parameters: {"Envelope"=>{"xmlns:urn"=>"urn:ActionWebService", "xmlns:soapenv"=>"http://schemas.xmlsoap.org/soap/envelope/", "Body"=>{"HelloMessage"=>{"soapenv:encodingStyle"=>"http://schemas.xmlsoap.org/soap/encoding/", "lastname"=>"asdf", "firstname"=>"222"}}, "Header"=>nil, "xmlns:xsd"=>"http://www.w3.org/2001/XMLSchema", "xmlns:xsi"=>"http://www.w3.org/2001/XMLSchema-instance"}}
+
+Web Service Request: HelloMessage(firstname=>"222", lastname=>"asdf") Entrypoint: api
+  <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActionWebService">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <urn:HelloMessage soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+           <firstname xsi:type="xsd:string">222</firstname>
+           <lastname xsi:type="xsd:string">asdf</lastname>
+        </urn:HelloMessage>
+     </soapenv:Body>
+  </soapenv:Envelope>
+
+Web Service Response (0.002047): => "Hello 222 asdf"
+  <?xml version="1.0" encoding="UTF-8" ?>
+  <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <env:Body>
+      <n1:HelloMessageResponse xmlns:n1="urn:ActionWebService"
+          env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+        <return xsi:type="xsd:string">Hello 222 asdf</return>
+      </n1:HelloMessageResponse>
+    </env:Body>
+  </env:Envelope>
+Sending data 
+Completed in 18ms (View: 1, DB: 0) | 200 OK [http://localhost/article_api/api]
+
+
+Processing ArticleApiController#api (for 127.0.0.1 at 2016-03-12 17:10:07) [POST]
+  Parameters: {"Envelope"=>{"xmlns:urn"=>"urn:ActionWebService", "xmlns:soapenv"=>"http://schemas.xmlsoap.org/soap/envelope/", "Body"=>{"HelloMessage"=>{"soapenv:encodingStyle"=>"http://schemas.xmlsoap.org/soap/encoding/", "lastname"=>"asdf", "firstname"=>"222"}}, "Header"=>nil, "xmlns:xsd"=>"http://www.w3.org/2001/XMLSchema", "xmlns:xsi"=>"http://www.w3.org/2001/XMLSchema-instance"}}
+
+Web Service Request: HelloMessage(firstname=>"222", lastname=>"asdf") Entrypoint: api
+  <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActionWebService">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <urn:HelloMessage soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+           <firstname xsi:type="xsd:string">222</firstname>
+           <lastname xsi:type="xsd:string">asdf</lastname>
+        </urn:HelloMessage>
+     </soapenv:Body>
+  </soapenv:Envelope>
+
+Web Service Response (0.003445): => "Hello 222 asdf"
+  <?xml version="1.0" encoding="UTF-8" ?>
+  <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <env:Body>
+      <n1:HelloMessageResponse xmlns:n1="urn:ActionWebService"
+          env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+        <return xsi:type="xsd:string">Hello 222 asdf</return>
+      </n1:HelloMessageResponse>
+    </env:Body>
+  </env:Envelope>
+Sending data 
+Completed in 20ms (View: 2, DB: 0) | 200 OK [http://localhost/article_api/api]
+
+
+Processing ArticleApiController#api (for 127.0.0.1 at 2016-03-12 17:10:07) [POST]
+  Parameters: {"Envelope"=>{"xmlns:urn"=>"urn:ActionWebService", "xmlns:soapenv"=>"http://schemas.xmlsoap.org/soap/envelope/", "Body"=>{"HelloMessage"=>{"soapenv:encodingStyle"=>"http://schemas.xmlsoap.org/soap/encoding/", "lastname"=>"asdf", "firstname"=>"222"}}, "Header"=>nil, "xmlns:xsd"=>"http://www.w3.org/2001/XMLSchema", "xmlns:xsi"=>"http://www.w3.org/2001/XMLSchema-instance"}}
+
+Web Service Request: HelloMessage(firstname=>"222", lastname=>"asdf") Entrypoint: api
+  <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActionWebService">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <urn:HelloMessage soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+           <firstname xsi:type="xsd:string">222</firstname>
+           <lastname xsi:type="xsd:string">asdf</lastname>
+        </urn:HelloMessage>
+     </soapenv:Body>
+  </soapenv:Envelope>
+
+Web Service Response (0.001682): => "Hello 222 asdf"
+  <?xml version="1.0" encoding="UTF-8" ?>
+  <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <env:Body>
+      <n1:HelloMessageResponse xmlns:n1="urn:ActionWebService"
+          env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+        <return xsi:type="xsd:string">Hello 222 asdf</return>
+      </n1:HelloMessageResponse>
+    </env:Body>
+  </env:Envelope>
+Sending data 
+Completed in 15ms (View: 1, DB: 0) | 200 OK [http://localhost/article_api/api]
+
+
+Processing ArticleApiController#api (for 127.0.0.1 at 2016-03-12 17:10:08) [POST]
+  Parameters: {"Envelope"=>{"xmlns:urn"=>"urn:ActionWebService", "xmlns:soapenv"=>"http://schemas.xmlsoap.org/soap/envelope/", "Body"=>{"HelloMessage"=>{"soapenv:encodingStyle"=>"http://schemas.xmlsoap.org/soap/encoding/", "lastname"=>"asdf", "firstname"=>"222"}}, "Header"=>nil, "xmlns:xsd"=>"http://www.w3.org/2001/XMLSchema", "xmlns:xsi"=>"http://www.w3.org/2001/XMLSchema-instance"}}
+
+Web Service Request: HelloMessage(firstname=>"222", lastname=>"asdf") Entrypoint: api
+  <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActionWebService">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <urn:HelloMessage soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+           <firstname xsi:type="xsd:string">222</firstname>
+           <lastname xsi:type="xsd:string">asdf</lastname>
+        </urn:HelloMessage>
+     </soapenv:Body>
+  </soapenv:Envelope>
+
+Web Service Response (0.004388): => "Hello 222 asdf"
+  <?xml version="1.0" encoding="UTF-8" ?>
+  <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <env:Body>
+      <n1:HelloMessageResponse xmlns:n1="urn:ActionWebService"
+          env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+        <return xsi:type="xsd:string">Hello 222 asdf</return>
+      </n1:HelloMessageResponse>
+    </env:Body>
+  </env:Envelope>
+Sending data 
+Completed in 23ms (View: 3, DB: 0) | 200 OK [http://localhost/article_api/api]
+
+
+Processing ArticleApiController#api (for 127.0.0.1 at 2016-03-12 17:10:08) [POST]
+  Parameters: {"Envelope"=>{"xmlns:urn"=>"urn:ActionWebService", "xmlns:soapenv"=>"http://schemas.xmlsoap.org/soap/envelope/", "Body"=>{"HelloMessage"=>{"soapenv:encodingStyle"=>"http://schemas.xmlsoap.org/soap/encoding/", "lastname"=>"asdf", "firstname"=>"222"}}, "Header"=>nil, "xmlns:xsd"=>"http://www.w3.org/2001/XMLSchema", "xmlns:xsi"=>"http://www.w3.org/2001/XMLSchema-instance"}}
+
+Web Service Request: HelloMessage(firstname=>"222", lastname=>"asdf") Entrypoint: api
+  <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActionWebService">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <urn:HelloMessage soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+           <firstname xsi:type="xsd:string">222</firstname>
+           <lastname xsi:type="xsd:string">asdf</lastname>
+        </urn:HelloMessage>
+     </soapenv:Body>
+  </soapenv:Envelope>
+
+Web Service Response (0.003413): => "Hello 222 asdf"
+  <?xml version="1.0" encoding="UTF-8" ?>
+  <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <env:Body>
+      <n1:HelloMessageResponse xmlns:n1="urn:ActionWebService"
+          env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+        <return xsi:type="xsd:string">Hello 222 asdf</return>
+      </n1:HelloMessageResponse>
+    </env:Body>
+  </env:Envelope>
+Sending data 
+Completed in 26ms (View: 3, DB: 0) | 200 OK [http://localhost/article_api/api]
+
+
+Processing ArticleApiController#api (for 127.0.0.1 at 2016-03-12 17:10:08) [POST]
+  Parameters: {"Envelope"=>{"xmlns:urn"=>"urn:ActionWebService", "xmlns:soapenv"=>"http://schemas.xmlsoap.org/soap/envelope/", "Body"=>{"HelloMessage"=>{"soapenv:encodingStyle"=>"http://schemas.xmlsoap.org/soap/encoding/", "lastname"=>"asdf", "firstname"=>"222"}}, "Header"=>nil, "xmlns:xsd"=>"http://www.w3.org/2001/XMLSchema", "xmlns:xsi"=>"http://www.w3.org/2001/XMLSchema-instance"}}
+
+Web Service Request: HelloMessage(firstname=>"222", lastname=>"asdf") Entrypoint: api
+  <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActionWebService">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <urn:HelloMessage soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+           <firstname xsi:type="xsd:string">222</firstname>
+           <lastname xsi:type="xsd:string">asdf</lastname>
+        </urn:HelloMessage>
+     </soapenv:Body>
+  </soapenv:Envelope>
+
+Web Service Response (0.002334): => "Hello 222 asdf"
+  <?xml version="1.0" encoding="UTF-8" ?>
+  <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <env:Body>
+      <n1:HelloMessageResponse xmlns:n1="urn:ActionWebService"
+          env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+        <return xsi:type="xsd:string">Hello 222 asdf</return>
+      </n1:HelloMessageResponse>
+    </env:Body>
+  </env:Envelope>
+Sending data 
+Completed in 26ms (View: 2, DB: 0) | 200 OK [http://localhost/article_api/api]
+
+
+Processing ArticleApiController#api (for 127.0.0.1 at 2016-03-12 17:10:09) [POST]
+  Parameters: {"Envelope"=>{"xmlns:urn"=>"urn:ActionWebService", "xmlns:soapenv"=>"http://schemas.xmlsoap.org/soap/envelope/", "Body"=>{"HelloMessage"=>{"soapenv:encodingStyle"=>"http://schemas.xmlsoap.org/soap/encoding/", "lastname"=>"asdf", "firstname"=>"222"}}, "Header"=>nil, "xmlns:xsd"=>"http://www.w3.org/2001/XMLSchema", "xmlns:xsi"=>"http://www.w3.org/2001/XMLSchema-instance"}}
+
+Web Service Request: HelloMessage(firstname=>"222", lastname=>"asdf") Entrypoint: api
+  <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActionWebService">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <urn:HelloMessage soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+           <firstname xsi:type="xsd:string">222</firstname>
+           <lastname xsi:type="xsd:string">asdf</lastname>
+        </urn:HelloMessage>
+     </soapenv:Body>
+  </soapenv:Envelope>
+
+Web Service Response (0.002811): => "Hello 222 asdf"
+  <?xml version="1.0" encoding="UTF-8" ?>
+  <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <env:Body>
+      <n1:HelloMessageResponse xmlns:n1="urn:ActionWebService"
+          env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+        <return xsi:type="xsd:string">Hello 222 asdf</return>
+      </n1:HelloMessageResponse>
+    </env:Body>
+  </env:Envelope>
+Sending data 
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/article_api/api]
+
+
+Processing ArticleApiController#api (for 127.0.0.1 at 2016-03-12 17:10:09) [POST]
+  Parameters: {"Envelope"=>{"xmlns:urn"=>"urn:ActionWebService", "xmlns:soapenv"=>"http://schemas.xmlsoap.org/soap/envelope/", "Body"=>{"HelloMessage"=>{"soapenv:encodingStyle"=>"http://schemas.xmlsoap.org/soap/encoding/", "lastname"=>"asdf", "firstname"=>"222"}}, "Header"=>nil, "xmlns:xsd"=>"http://www.w3.org/2001/XMLSchema", "xmlns:xsi"=>"http://www.w3.org/2001/XMLSchema-instance"}}
+
+Web Service Request: HelloMessage(firstname=>"222", lastname=>"asdf") Entrypoint: api
+  <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActionWebService">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <urn:HelloMessage soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+           <firstname xsi:type="xsd:string">222</firstname>
+           <lastname xsi:type="xsd:string">asdf</lastname>
+        </urn:HelloMessage>
+     </soapenv:Body>
+  </soapenv:Envelope>
+
+Web Service Response (0.004351): => "Hello 222 asdf"
+  <?xml version="1.0" encoding="UTF-8" ?>
+  <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <env:Body>
+      <n1:HelloMessageResponse xmlns:n1="urn:ActionWebService"
+          env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+        <return xsi:type="xsd:string">Hello 222 asdf</return>
+      </n1:HelloMessageResponse>
+    </env:Body>
+  </env:Envelope>
+Sending data 
+Completed in 41ms (View: 3, DB: 0) | 200 OK [http://localhost/article_api/api]
+
+
+Processing ArticleApiController#api (for 127.0.0.1 at 2016-03-12 17:10:10) [POST]
+  Parameters: {"Envelope"=>{"xmlns:urn"=>"urn:ActionWebService", "xmlns:soapenv"=>"http://schemas.xmlsoap.org/soap/envelope/", "Body"=>{"HelloMessage"=>{"soapenv:encodingStyle"=>"http://schemas.xmlsoap.org/soap/encoding/", "lastname"=>"asdf", "firstname"=>"222"}}, "Header"=>nil, "xmlns:xsd"=>"http://www.w3.org/2001/XMLSchema", "xmlns:xsi"=>"http://www.w3.org/2001/XMLSchema-instance"}}
+
+Web Service Request: HelloMessage(firstname=>"222", lastname=>"asdf") Entrypoint: api
+  <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActionWebService">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <urn:HelloMessage soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+           <firstname xsi:type="xsd:string">222</firstname>
+           <lastname xsi:type="xsd:string">asdf</lastname>
+        </urn:HelloMessage>
+     </soapenv:Body>
+  </soapenv:Envelope>
+
+Web Service Response (0.002278): => "Hello 222 asdf"
+  <?xml version="1.0" encoding="UTF-8" ?>
+  <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <env:Body>
+      <n1:HelloMessageResponse xmlns:n1="urn:ActionWebService"
+          env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+        <return xsi:type="xsd:string">Hello 222 asdf</return>
+      </n1:HelloMessageResponse>
+    </env:Body>
+  </env:Envelope>
+Sending data 
+Completed in 30ms (View: 2, DB: 0) | 200 OK [http://localhost/article_api/api]
+
+
+Processing ArticleApiController#api (for 127.0.0.1 at 2016-03-12 17:10:12) [POST]
+  Parameters: {"Envelope"=>{"xmlns:urn"=>"urn:ActionWebService", "xmlns:soapenv"=>"http://schemas.xmlsoap.org/soap/envelope/", "Body"=>{"HelloMessage"=>{"soapenv:encodingStyle"=>"http://schemas.xmlsoap.org/soap/encoding/", "lastname"=>"222", "firstname"=>"222"}}, "Header"=>nil, "xmlns:xsd"=>"http://www.w3.org/2001/XMLSchema", "xmlns:xsi"=>"http://www.w3.org/2001/XMLSchema-instance"}}
+
+Web Service Request: HelloMessage(firstname=>"222", lastname=>"222") Entrypoint: api
+  <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActionWebService">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <urn:HelloMessage soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+           <firstname xsi:type="xsd:string">222</firstname>
+           <lastname xsi:type="xsd:string">222</lastname>
+        </urn:HelloMessage>
+     </soapenv:Body>
+  </soapenv:Envelope>
+
+Web Service Response (0.004010): => "Hello 222 222"
+  <?xml version="1.0" encoding="UTF-8" ?>
+  <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <env:Body>
+      <n1:HelloMessageResponse xmlns:n1="urn:ActionWebService"
+          env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+        <return xsi:type="xsd:string">Hello 222 222</return>
+      </n1:HelloMessageResponse>
+    </env:Body>
+  </env:Envelope>
+Sending data 
+Completed in 21ms (View: 2, DB: 0) | 200 OK [http://localhost/article_api/api]
+
+
+Processing ArticleApiController#api (for 127.0.0.1 at 2016-03-12 17:10:15) [POST]
+  Parameters: {"Envelope"=>{"xmlns:urn"=>"urn:ActionWebService", "xmlns:soapenv"=>"http://schemas.xmlsoap.org/soap/envelope/", "Body"=>{"HelloMessage"=>{"soapenv:encodingStyle"=>"http://schemas.xmlsoap.org/soap/encoding/", "lastname"=>"33", "firstname"=>"222"}}, "Header"=>nil, "xmlns:xsd"=>"http://www.w3.org/2001/XMLSchema", "xmlns:xsi"=>"http://www.w3.org/2001/XMLSchema-instance"}}
+
+Web Service Request: HelloMessage(firstname=>"222", lastname=>"33") Entrypoint: api
+  <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActionWebService">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <urn:HelloMessage soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+           <firstname xsi:type="xsd:string">222</firstname>
+           <lastname xsi:type="xsd:string">33</lastname>
+        </urn:HelloMessage>
+     </soapenv:Body>
+  </soapenv:Envelope>
+
+Web Service Response (0.001308): => "Hello 222 33"
+  <?xml version="1.0" encoding="UTF-8" ?>
+  <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <env:Body>
+      <n1:HelloMessageResponse xmlns:n1="urn:ActionWebService"
+          env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+        <return xsi:type="xsd:string">Hello 222 33</return>
+      </n1:HelloMessageResponse>
+    </env:Body>
+  </env:Envelope>
+Sending data 
+Completed in 15ms (View: 1, DB: 0) | 200 OK [http://localhost/article_api/api]
+
+
+Processing ArticleApiController#api (for 127.0.0.1 at 2016-03-12 17:10:17) [POST]
+  Parameters: {"Envelope"=>{"xmlns:urn"=>"urn:ActionWebService", "xmlns:soapenv"=>"http://schemas.xmlsoap.org/soap/envelope/", "Body"=>{"HelloMessage"=>{"soapenv:encodingStyle"=>"http://schemas.xmlsoap.org/soap/encoding/", "lastname"=>"33", "firstname"=>"44"}}, "Header"=>nil, "xmlns:xsd"=>"http://www.w3.org/2001/XMLSchema", "xmlns:xsi"=>"http://www.w3.org/2001/XMLSchema-instance"}}
+
+Web Service Request: HelloMessage(firstname=>"44", lastname=>"33") Entrypoint: api
+  <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActionWebService">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <urn:HelloMessage soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+           <firstname xsi:type="xsd:string">44</firstname>
+           <lastname xsi:type="xsd:string">33</lastname>
+        </urn:HelloMessage>
+     </soapenv:Body>
+  </soapenv:Envelope>
+
+Web Service Response (0.006252): => "Hello 44 33"
+  <?xml version="1.0" encoding="UTF-8" ?>
+  <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <env:Body>
+      <n1:HelloMessageResponse xmlns:n1="urn:ActionWebService"
+          env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+        <return xsi:type="xsd:string">Hello 44 33</return>
+      </n1:HelloMessageResponse>
+    </env:Body>
+  </env:Envelope>
+Sending data 
+Completed in 31ms (View: 2, DB: 0) | 200 OK [http://localhost/article_api/api]
+
+
+Processing ArticleApiController#api (for 127.0.0.1 at 2016-03-12 17:10:20) [POST]
+  Parameters: {"Envelope"=>{"xmlns:urn"=>"urn:ActionWebService", "xmlns:soapenv"=>"http://schemas.xmlsoap.org/soap/envelope/", "Body"=>{"HelloMessage"=>{"soapenv:encodingStyle"=>"http://schemas.xmlsoap.org/soap/encoding/", "lastname"=>"55", "firstname"=>"44"}}, "Header"=>nil, "xmlns:xsd"=>"http://www.w3.org/2001/XMLSchema", "xmlns:xsi"=>"http://www.w3.org/2001/XMLSchema-instance"}}
+
+Web Service Request: HelloMessage(firstname=>"44", lastname=>"55") Entrypoint: api
+  <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:ActionWebService">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <urn:HelloMessage soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+           <firstname xsi:type="xsd:string">44</firstname>
+           <lastname xsi:type="xsd:string">55</lastname>
+        </urn:HelloMessage>
+     </soapenv:Body>
+  </soapenv:Envelope>
+
+Web Service Response (0.004720): => "Hello 44 55"
+  <?xml version="1.0" encoding="UTF-8" ?>
+  <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <env:Body>
+      <n1:HelloMessageResponse xmlns:n1="urn:ActionWebService"
+          env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+        <return xsi:type="xsd:string">Hello 44 55</return>
+      </n1:HelloMessageResponse>
+    </env:Body>
+  </env:Envelope>
+Sending data 
+Completed in 26ms (View: 2, DB: 0) | 200 OK [http://localhost/article_api/api]
